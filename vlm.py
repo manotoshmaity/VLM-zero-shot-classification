@@ -39,7 +39,7 @@ image_processed = preprocess(image).unsqueeze(0).to(device)
 
 # Display the selected image
 # image.show()
-# text_inputs = clip.tokenize(labels).to(device)
+text_inputs = clip.tokenize(labels).to(device)
 print(f"\nDisplaying Selected Image: {random_image_path}")
 display(image)
 # Perform zero-shot classification
