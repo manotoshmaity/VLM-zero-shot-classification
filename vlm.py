@@ -1,5 +1,5 @@
-# !pip install torch torchvision
-# !pip install git+https://github.com/openai/CLIP.git
+!pip install torch torchvision
+!pip install git+https://github.com/openai/CLIP.git
 # Import necessary libraries
 import torch
 import clip
@@ -56,3 +56,4 @@ print(f"\nPredicted Label: {best_match}")
 print("\nSimilarity Scores:")
 for label, score in zip(labels, similarity.tolist()):
     print(f"{label}: {score:.4f}")
+
